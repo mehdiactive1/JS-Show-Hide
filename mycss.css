@@ -11,6 +11,8 @@ h1,h2 {
 }
 .hs-j1 {
 	background-color: pink;
+	overflow: hidden;
+	position: relative;
 }
 .hs-j2 {
 	background-color: lightblue;
@@ -30,4 +32,11 @@ h1,h2 {
 	margin-right: auto;
 	text-align: center;
 	justify-content: center;
+}
+.hugetext{
+	font-size: 19em;
+	position: absolute;
+	right: -140px;
+	bottom: -140px;
+	font-family: 'Paytone One', sans-serif;
 }
