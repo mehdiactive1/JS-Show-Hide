@@ -18,3 +18,11 @@ $(".bullet3").click(function(){
   $(".hs-j2").hide();
   $(".hs-j1").hide();
 });
+
+$(document).ready(function(){
+  $('.hs-j1').mousemove(function(e){
+        var x = e.pageX - this.offsetLeft;
+        var y = e.pageY - this.offsetTop;
+        $('.hugetext').css({'top': x,'left': y}); 
+  });
+});
