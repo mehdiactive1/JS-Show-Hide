@@ -20,24 +20,32 @@ $(".bullet3").click(function(){
   $(".hs-j1").hide();
 });*/
 
-//slideshow (show,hide)
-jQuery(function(){
-        jQuery('.bullets').click(function(){
-              jQuery('.hide-js').hide();
-              jQuery('#div'+$(this).attr('target')).show();
+//Slideshow (show,hide)
+$(function(){
+        $('.bullets').click(function(){
+              $('.hide-js').hide();
+              $('#div'+ $(this).attr('target')).show();
         });
 });
 
-//fadeeffect
+//Fadeeffect
 $(".bullets").click(function(){
   $(".hide-js").fadeIn();
 });
 
-//mousemove effect
+//Mousemove Effect
 $(document).ready(function(){
   $('.hs-j1').mousemove(function(e){
         var x = e.pageX - this.offsetLeft - 300;
         var y = e.pageY - this.offsetTop - 300;
         $('.hugetext').css({'top': x,'left': y}); 
   });
+});
+
+//Append
+$(function(){
+        $('.hs-j3').click(function(){
+          $(".hs-j3").prepend("<div class='appendtext'><b>Appended text</b></div>");
+        });
+
 });
