@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $(".hs-j2,.hs-j3").hide();
 });
@@ -43,9 +42,18 @@ $(document).ready(function(){
 });
 
 //Append
-$(function(){
-        $('.hs-j3').click(function(){
-          $(".hs-j3").prepend("<div class='appendtext'><b>Appended text</b></div>");
-        });
 
+
+
+$(function(){
+	
+	
+	
+	$('.hs-j3').one("click", function(){
+  $(this).prepend("<div class='appendtext'><b>Appended text</b></div>");
 });
+
+
+	
+})
+
