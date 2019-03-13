@@ -42,18 +42,10 @@ $(document).ready(function(){
 });
 
 //Append
-
-
-
 $(function(){
-	
-	
-	
-	$('.hs-j3').one("click", function(){
+
+$('.hs-j3').one("click", function(){
   $(this).prepend("<div class='appendtext'><b>Appended text</b></div>");
-});
-
-
-	
+   });	
 })
 
